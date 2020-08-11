@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .banner__container {
+            width: 520px;
+            height: 280px;
+            border: 1px solid;
+            margin: 0 auto;
+            display: flex;
+            position: relative;
+
+        }
+
+        .banner__imgcontainer {
+            flex: 1 0 300%;
+            height: 100%;
+            background-color: #00f;
+            font-size: 0;
+            display: flex;
+        }
+
+        .banner__img {
+            flex: 1;
+        }
+
+        .banner__dotcontainer {
+            height: 10px;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            background-color: #ccc;
+            line-height: 20px;
+
+        }
+
+        .banner__dot {
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: #000;
+            float: left;
+            margin: 0 10px;
+            border-radius: 50%;
+        }
+
+        .banner__dotcover {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BEM类名命名规范</h1>
+    <div class="banner__container">
+        <div class="banner__imgcontainer">
+            <img src="./BANNER.png" alt="" class="banner__img">
+            <img src="./BANNER.png" alt="" class="banner__img">
+            <img src="./BANNER.png" alt="" class="banner__img">
+        </div>
+        <div class="banner__dotcontainer">
+            <span class="banner__dot banner__dotcover"></span>
+            <span class="banner__dot"></span>
+            <span class="banner__dot"></span>
+        </div>
+    </div>
+</body>
+
+</html>
