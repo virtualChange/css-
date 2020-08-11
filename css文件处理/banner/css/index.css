@@ -1,0 +1,7 @@
+.red {
+    color: #f40;
+    width: 700px;
+    height: 700px;
+    background-image: url('/banner/bg.png');
+    background-size: cover;
+}
