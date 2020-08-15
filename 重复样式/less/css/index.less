@@ -1,0 +1,15 @@
+//变量的使用
+@color: #f40;
+
+div {
+    color: @color;
+
+    .border();
+}
+
+//混合
+.border(@color:#fff) {
+    border: 1px solid @color
+}
+
+//添加（），使该代码不生成到编译结果中（它的作用只是用来混入其他样式的）
